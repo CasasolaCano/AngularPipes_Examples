@@ -12,17 +12,21 @@
 <div class="p-grid">
 
     <div class="p-col-4">
-        <p-card header="uppercase">
-
+        <p-card header="lowercase" [subheader]="nameLower">
+            {{nameLower | lowercase}}
         </p-card>
     </div>
 
-    <div class="p-col-4">
-        2
+    <div class=" p-col-4 ">
+        <p-card header="uppercase" [subheader]="nameUpper | lowercase">
+            {{nameUpper | uppercase}}
+        </p-card>
     </div>
 
-    <div class="p-col-4">
-        3
+    <div class="p-col-4 ">
+        <p-card header="titleCase" [subheader]="nameUpper | titlecase">
+            {{nameUpper | titlecase}}
+        </p-card>
     </div>
 
 </div>
