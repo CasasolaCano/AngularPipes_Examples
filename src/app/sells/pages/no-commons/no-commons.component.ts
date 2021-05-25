@@ -5,11 +5,13 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './no-commons.component.html',
   styleUrls: ['./no-commons.component.css']
 })
-export class NoCommonsComponent implements OnInit {
+export class NoCommonsComponent  {
 
-  constructor() { }
+  name:string = "Susana";
+  gender:string = "femenino";
 
-  ngOnInit(): void {
+  invitationMap = {
+    'masculino': 'invitarlo',
+    'femenino': 'invitarla'
   }
-
 }
