@@ -7,11 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NoCommonsComponent  {
 
+  //i18nSelect Pipe
   name:string = "Susana";
   gender:string = "femenino";
 
   invitationMap = {
     'masculino': 'invitarlo',
     'femenino': 'invitarla'
+  }
+
+
+  //i18nPlural Pipe
+
+  clientes:string[] = ['Nuria', 'Francisco', 'Vivido'];
+  clientsMap = {
+    '=0': 'no tenemos ningún cliente',
+    '=1': 'tenemos un cliente',
+    'other': 'tenemos # clientes'
   }
 }
