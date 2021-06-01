@@ -19,10 +19,19 @@ export class NoCommonsComponent  {
 
   //i18nPlural Pipe
 
-  clientes:string[] = ['Nuria', 'Francisco', 'Vivido'];
+  clientes:string[] = ['Nuria', 'Francisco', 'Vivido', "Domingo", "María"];
   clientsMap = {
     '=0': 'no tenemos ningún cliente',
     '=1': 'tenemos un cliente',
     'other': 'tenemos # clientes'
+  }
+
+  CambiarNombre() {
+    this.name = "Francisco",
+    this.gender = "masculino"
+  }
+
+  BorrarCliente() {
+    this.clientes.pop();
   }
 }
