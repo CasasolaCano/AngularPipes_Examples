@@ -42,4 +42,21 @@ export class NoCommonsComponent  {
     edad:35,
     address:'Paris, Francia'
   }
+
+  // Json
+
+  albums = [
+    {
+      name: 'Lizard',
+      year: 1978
+    },
+    {
+      name: 'In the Court of the Crimson King',
+      year: 1988
+    },
+    {
+      name: 'Lady Formentera',
+      year: 1990
+    }
+  ]
 }

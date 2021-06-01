@@ -60,4 +60,14 @@
 
         </p-fieldset>
     </div>
+
+    <div class="p-col p-md-6 p-sm-9">
+        <p-fieldset legend="Json Pipe" [toggleable]="true">
+
+            <pre>
+                {{ albums | json }}
+            </pre>
+
+        </p-fieldset>
+    </div>
 </div>
