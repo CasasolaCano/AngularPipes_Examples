@@ -34,4 +34,12 @@ export class NoCommonsComponent  {
   BorrarCliente() {
     this.clientes.pop();
   }
+
+  //KeyValue Pipe
+
+  person = {
+    name: 'Sebastian',
+    edad:35,
+    address:'Paris, Francia'
+  }
 }
