@@ -5,7 +5,8 @@ import { Pipe, PipeTransform } from "@angular/core";
 })
 export class MayusPipe implements PipeTransform{
 
-    transform():string {
-        return 'Hola mundo';
+    transform(value:string, mayus:boolean = true ):string {
+        
+        return (mayus) ? value.toUpperCase() : value.toLowerCase();
     }
 }

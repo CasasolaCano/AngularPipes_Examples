@@ -1,4 +1,8 @@
 <div class="text-layout">
     <h1>Pipes personalizados</h1>
-    <p>Pipes creados por {{'nosotros' | mayus}}</p>
+    <p>Pipes creados por {{"nosotros" | mayus:mayus}}</p>
+
+    <button pButton class="p-button-outlined" label="Toggle Mayusculas" (click)="mayus = !mayus">
+        
+    </button>
 </div>
