@@ -7,7 +7,10 @@ import { NumbersComponent } from './pages/numbers/numbers.component';
 import { NoCommonsComponent } from './pages/no-commons/no-commons.component';
 import { BasicsComponent } from './pages/basics/basics.component';
 import { OrderComponent } from './pages/order/order.component';
+
 import { MayusPipe } from './pipes/mayus.pipe';
+import { FlyPipe } from './pipes/fly.pipe';
+
 
 
 
@@ -18,7 +21,8 @@ import { MayusPipe } from './pipes/mayus.pipe';
     NoCommonsComponent,
     BasicsComponent,
     OrderComponent,
-    MayusPipe
+    MayusPipe,
+    FlyPipe
   ],
   imports: [
     CommonModule,
