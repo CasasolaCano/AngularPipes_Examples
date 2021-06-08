@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Color, Heroes } from '../../interfaces/sells.interfaces';
+import { Color, Heroe } from '../../interfaces/sells.interfaces';
 
 @Component({
   selector: 'app-order',
@@ -9,7 +9,7 @@ import { Color, Heroes } from '../../interfaces/sells.interfaces';
 export class OrderComponent {
 
   mayus:boolean = false;
-  heroes:Heroes[] = [
+  heroes:Heroe[] = [
     {
       name:'Superman',
       vuela:true,

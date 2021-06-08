@@ -10,6 +10,7 @@ import { OrderComponent } from './pages/order/order.component';
 
 import { MayusPipe } from './pipes/mayus.pipe';
 import { FlyPipe } from './pipes/fly.pipe';
+import { OrderPipe } from './pipes/order.pipe';
 
 
 
@@ -22,7 +23,8 @@ import { FlyPipe } from './pipes/fly.pipe';
     BasicsComponent,
     OrderComponent,
     MayusPipe,
-    FlyPipe
+    FlyPipe,
+    OrderPipe
   ],
   imports: [
     CommonModule,
