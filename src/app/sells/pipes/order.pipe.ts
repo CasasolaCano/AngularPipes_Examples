@@ -6,11 +6,28 @@ import { Heroe } from '../interfaces/sells.interfaces';
 })
 export class OrderPipe implements PipeTransform {
 
-  transform(heroes: Heroe[]): Heroe[] {
+  transform(heroes: Heroe[], orderBy = 'sin valor'): Heroe[] {
 
-    heroes = heroes.sort((a,b) => (a.name > b.name) ? 1: -1);
+    switch(orderBy) {
+      case 'name':
+        return heroes.sort((a,b) => (a.name > b.name) ? 1: -1);
 
-    return heroes;
+      case 'fly':
+        return heroes.sort((a,b) => (a.vuela > b.vuela) ? -1: 1);
+
+      case 'color':
+        return heroes.sort((a,b) => (a.color > b.color) ? 1 : -1);
+        
+      default:
+        return heroes;
+    }
+
+    if(orderBy === 'sin valor') {
+      return heroes;
+    }
+
+   
+    
   }
 
 }

@@ -9,6 +9,8 @@ import { Color, Heroe } from '../../interfaces/sells.interfaces';
 export class OrderComponent {
 
   mayus:boolean = false;
+
+  orderby:string = 'name';
   heroes:Heroe[] = [
     {
       name:'Superman',
@@ -36,5 +38,10 @@ export class OrderComponent {
       color: Color.verde
     }
   ]
+
+  changeOrder(value:string) {
+    this.orderby = value;
+    console.log(value);
+  }
 
 }
