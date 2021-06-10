@@ -21,13 +21,5 @@ export class OrderPipe implements PipeTransform {
       default:
         return heroes;
     }
-
-    if(orderBy === 'sin valor') {
-      return heroes;
-    }
-
-   
-    
   }
-
 }
